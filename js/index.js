@@ -1,6 +1,6 @@
 const musicAudio = document.querySelector('#audio');
 const musicContainer = document.querySelector('.mainContainer');
-const songTitle = ['hey', 'summer', 'ukulele'];
+const songTitle = ['hey', 'summer', 'ukulele', 'Namo Namo', 'Lehra Do'];
 const musicName = document.querySelector('.musicName');
 const pervButton = document.querySelector('#prev');
 const nextButton = document.querySelector('#next');
