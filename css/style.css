@@ -1,6 +1,7 @@
 /* CSS RESET */
 
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +16,7 @@
 .musicPlayerContainer {
     height: 100vh;
     width: 100%;
-    background: linear-gradient( 0deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 92%);
+    background: linear-gradient(0deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 92%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -23,14 +24,14 @@
 }
 
 .mainContainer {
-    border: 2px solid #000;
+    border: 3px solid #000;
     width: 30%;
     height: 200px;
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 35px;
     background: #fff;
     box-shadow: 0 20px 20px 0 rgba(252, 169, 169, 0.6);
 }
@@ -51,6 +52,7 @@
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -59,7 +61,7 @@
 .circularBorder {
     border: 4px solid black;
     border-radius: 50%;
-    background: linear-gradient( 0deg, rgb(247, 43, 43) 23.8%, rgb(105, 211, 224) 92%);
+    background: linear-gradient(0deg, rgb(247, 43, 43) 23.8%, rgb(105, 211, 224) 92%);
     height: 150px;
     width: 150px;
     display: flex;
@@ -125,8 +127,9 @@
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 15px;
-    border: 1px solid #000;
+    border: 2px solid #000;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .action-btn:hover {
@@ -142,4 +145,181 @@
     height: 100%;
     width: 0%;
     transition: width 0.1s linear;
+}
+
+/* Making Responsive */
+
+@media (max-width: 1300px) {
+
+    .mainContainer {
+        width: 45%;
+        height: 300px;
+    }
+
+    .circularBorder {
+        height: 200px;
+        width: 200px;
+    }
+
+    .musicPlayerContainer h1 {
+        font-size: 50px;
+    }
+
+    .action-btn {
+        font-size: 23px;
+        padding: 5px 10px;
+        border: 3px solid #000;
+        border-radius: 50%;
+    }
+
+    .rightContainer {
+        height: 160px;
+    }
+
+    .upperHalf {
+        height: 100px;
+    }
+
+    .musicName {
+        font-size: 30px;
+    }
+
+}
+
+@media(max-width: 1050px) {
+    .mainContainer {
+        width: 45%;
+    }
+
+    .action-btn {
+        font-size: 20px;
+        padding: 5px 10px;
+        border: 2px solid #000;
+        border-radius: 50%;
+    }
+
+    .musicName {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .circularBorder {
+        height: 175px;
+        width: 175px;
+    }
+}
+
+@media(max-width: 920px) {
+
+    .mainContainer {
+        width: 70%;
+        justify-content: space-around;
+        height: 400px;
+    }
+
+    .circularBorder {
+        height: 250px;
+        width: 250px;
+    }
+
+    .musicName {
+        font-size: 30px;
+    }
+
+    .action-btn {
+        font-size: 23px;
+        padding: 5px 10px;
+        border: 3px solid #000;
+        border-radius: 50%;
+    }
+
+    .rightContainer {
+        height: 160px;
+    }
+
+    .upperHalf {
+        height: 100px;
+    }
+
+    .musicPlayerContainer h1 {
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 550px) {
+    .mainContainer {
+        width: 80%;
+        justify-content: space-between;
+        height: 300px;
+    }
+
+    .circularBorder {
+        height: 200px;
+        width: 200px;
+    }
+
+    .action-btn {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .mainContainer {
+        width: 80%;
+        justify-content: space-around;
+        height: 200px;
+    }
+
+    .action-btn {
+        font-size: 12px;
+        padding: 5px 7px;
+        border: 2px solid #000;
+        border-radius: 50%;
+        font-weight: bold;
+    }
+
+    .circularBorder {
+        height: 150px;
+        width: 150px;
+    }
+
+    .progressBar {
+        width: 80%;
+    }
+
+    .musicName {
+        font-size: 22px;
+    }
+
+    .musicPlayerContainer h1 {
+        font-size: 40px;
+    }
+
+    .upperHalf {
+        height: 80px;
+    }
+
+    .rightContainer {
+        height: 110px;
+    }
+}
+
+@media (max-width:380px) {
+    .musicPlayerContainer h1 {
+        font-size: 30px;
+    }
+
+    .circularBorder {
+        height: 125px;
+        width: 125px;
+    }
+
+    .musicName {
+        font-size: 20px;
+    }
+
+    .action-btn {
+        font-size: 10px;
+    }
 }
